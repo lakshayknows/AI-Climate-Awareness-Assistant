@@ -1,0 +1,15 @@
+{
+    "name": null,
+    "input_variables": [
+        "article"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Your task is to summarize the given climate news or research article into a plain-language summary that is easily understandable by a general audience.\n\nTo achieve this, keep the following guidelines in mind:\n* The summary should be concise, capturing the main points of the article in one paragraph;\n* Use plain language that avoids technical jargon and scientific terms wherever possible;\n* Ensure the key information and findings from the article are retained and clearly conveyed;\n* Structure the summary to be engaging and informative, making the subject matter approachable for readers without specialized knowledge;\n\nThe article to be summarized is provided below:\n{article}\n\nPlease generate the summary according to the guidelines above.",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
