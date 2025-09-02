@@ -7,8 +7,8 @@ load_dotenv()
 
 
 model = ChatOpenAI(
-  api_key=getenv("OPENROUTER_API_KEY"),
-  base_url=getenv("OPENROUTER_BASE_URL"),
+  openai_api_key=getenv("OPENROUTER_API_KEY"),
+  openai_api_base=getenv("OPENROUTER_BASE_URL"),
   model="openai/gpt-oss-120b",
 )
 
