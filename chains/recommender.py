@@ -6,15 +6,17 @@ from typing import Optional , Literal
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 from os import getenv
+from utils.config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, MODEL_NAME
+
 
 load_dotenv()
 
 
 # Model
 model = ChatOpenAI(
-    api_key=getenv("OPENROUTER_API_KEY"),
-    base_url=getenv("OPENROUTER_BASE_URL"),
-    model="openai/gpt-oss-120b",
+    api_key=OPENROUTER_API_KEY,
+    base_url=OPENROUTER_BASE_URL,
+    model=MODEL_NAME,
 )
 
 class EcoAction(BaseModel):

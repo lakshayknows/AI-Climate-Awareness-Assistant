@@ -5,6 +5,8 @@ from pydantic import Field , BaseModel
 from typing import Optional , Literal
 from langchain_openai import ChatOpenAI
 from os import getenv
+from utils.config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, MODEL_NAME
+
 
 # Load environment variables
 load_dotenv()
@@ -48,9 +50,9 @@ Guidelines:
 
 # Model
 model = ChatOpenAI(
-    api_key=getenv("OPENROUTER_API_KEY"),
-    base_url=getenv("OPENROUTER_BASE_URL"),
-    model="openai/gpt-oss-120b",
+    api_key=OPENROUTER_API_KEY,
+    base_url=OPENROUTER_BASE_URL,
+    model=MODEL_NAME,
 )
 
 # Chain

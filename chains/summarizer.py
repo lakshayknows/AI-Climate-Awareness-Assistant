@@ -3,13 +3,15 @@ from dotenv import load_dotenv
 from langchain.prompts import load_prompt
 from langchain_openai import ChatOpenAI
 from os import getenv
+from utils.config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, MODEL_NAME
+
 load_dotenv()
 
 
 model = ChatOpenAI(
-  openai_api_key=getenv("OPENROUTER_API_KEY"),
-  openai_api_base=getenv("OPENROUTER_BASE_URL"),
-  model="openai/gpt-oss-120b",
+    api_key=OPENROUTER_API_KEY,
+    base_url=OPENROUTER_BASE_URL,
+    model=MODEL_NAME,
 )
 
 prompt = load_prompt('templates/template1.json')
