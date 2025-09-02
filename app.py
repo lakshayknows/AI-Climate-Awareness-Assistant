@@ -3,7 +3,9 @@ from utils import loaders, formatter
 from chains.summarizer import summarize_text
 from chains.quiz_generator import generate_quiz
 from chains.recommender import recommender
+from dotenv import load_dotenv
 
+load_dotenv()
 # --------------------
 # Streamlit Page Config
 # --------------------
