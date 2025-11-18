@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from pydantic import Field , BaseModel
 from typing import Optional , Literal
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 from os import getenv
 from utils.config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, MODEL_NAME
