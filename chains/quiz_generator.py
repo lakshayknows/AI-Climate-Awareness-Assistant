@@ -1,6 +1,6 @@
 from langchain_core.output_parsers import PydanticOutputParser
 from dotenv import load_dotenv
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from pydantic import Field , BaseModel
 from typing import Optional , Literal
 from langchain_openai import ChatOpenAI
